@@ -1,0 +1,13 @@
+title: Hello Lynn
+email: mail@hellolynn.com
+description: "My simple Jekyll portfolio"
+baseurl: "" # leave empty for local dev
+url: "https://www.hellolynn.com"
+
+# Build settings
+theme: null 
+markdown: kramdown
+
+# Makes URLs pretty
+permalink: pretty
+
