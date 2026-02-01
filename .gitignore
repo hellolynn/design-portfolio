@@ -1,0 +1,21 @@
+# Jekyll build folder
+_site/
+
+# Bundler config
+.bundle/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node modules (if you use npm)
+node_modules/
+
+# Sass cache
+.sass-cache/
+
+# VS Code settings
+.vscode/
+
+# Personal notes
+README.dev.md
