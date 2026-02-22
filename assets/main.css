@@ -1,10 +1,44 @@
-.under-construction {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh; /* fills the viewport */
-  font-family: sans-serif;
-  color: #333;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
+
+a {
+  color: #32c0ad;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #32c0ad; /* Bootstrap's primary color */
+}
+
+.max-width-800 {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600!important;
+}
+
+.tilted-highlight {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.tilted-highlight::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  background-color: #cbffed; 
+  transform: rotate(-2deg); 
+  z-index: -1;
+  border-radius: 2px;
+}
+

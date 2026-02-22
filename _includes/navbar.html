@@ -1,0 +1,90 @@
+<div class="d-flex flex-column h-100 text-center fixed-navbar">
+  <div class="sidebar-brand">
+    <a class="d-block" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Hello Lynn Logo" class="img-fluid" style="max-height: 200px;">
+    </a>
+  </div>
+
+  <ul class="nav flex-column mb-4">
+    <li class="nav-item mb-2">
+      <a class="nav-link link-dark p-0 {% if page.url == '/' %}active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
+    </li>
+    <li class="nav-item mb-2">
+      <a class="nav-link link-dark p-0 {% if page.url contains 'about' %}active{% endif %}" href="{{ '/about' | relative_url }}">About</a>
+    </li>    
+  </ul>
+
+
+  <p class="text-uppercase small text-muted mb-3" style="letter-spacing: 3px; font-size:11px;">Projects</p>
+
+  <ul class="nav flex-column mb-5">
+    <li class="nav-item mb-2">
+      <a class="nav-link link-dark p-0" href="{{ '/' | relative_url }}">Government of AB</a>
+    </li>
+    <li class="nav-item mb-2">
+      <a class="nav-link link-dark p-0" href="{{ '/' | relative_url }}">Government of BC</a>
+    </li>
+    <li class="nav-item mb-2">
+      <a class="nav-link link-dark p-0" href="{{ '/' | relative_url }}">Knowledge Kids</a>
+    </li>
+    <li class="nav-item mb-2">
+      <a class="nav-link link-dark p-0" href="{{ '/about' | relative_url }}">Knowledge Network</a>
+    </li>
+    <li class="nav-item mb-2">
+      <a class="nav-link link-dark p-0" href="{{ '/about' | relative_url }}">Other</a>
+    </li>    
+  </ul>
+
+  <div class="social-links d-flex justify-content-center gap-2 mb-2">
+    <a href="https://www.linkedin.com/in/hellolynn/" target="_blank" class="social-icon" aria-label="LinkedIn">
+      <i class="bi bi-linkedin"></i>
+    </a>
+    
+    <a href="https://github.com/hellolynn" target="_blank" class="social-icon" aria-label="GitHub">
+      <i class="bi bi-github"></i>
+    </a>
+  
+    <a href="mailto:mail@hellolynn.com" class="social-icon" aria-label="Email">
+      <i class="bi bi-envelope"></i>
+    </a>
+  </div>
+
+  <div class="sidebar-footer mt-2 pb-2">
+    <p class="text-muted small mb-0" 
+    style="line-height: 1.6; font-size: 11px; cursor: help; display: inline-block;"
+    data-bs-toggle="tooltip" 
+    data-bs-placement="top" 
+    title="Running Jekyll + Bootstrap">
+   &copy; {{ "now" | date: "%Y" }} – Hand coded by me &#9825;
+ </p>
+  </div>
+</div>
+
+<style>
+  .social-icon {
+    color: #1d1d1f;
+    font-size: 1.1rem; /* Slightly smaller looks more premium */
+    transition: opacity 0.2s ease;
+  }
+
+  .social-icon:hover {
+    opacity: 0.5;
+  }
+
+  /* This makes the icons feel even more delicate and custom */
+  .social-icon i {
+    stroke-width: 0.5px;
+    -webkit-text-stroke: 0.5px;
+  }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  })
+</script>
