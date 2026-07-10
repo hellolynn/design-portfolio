@@ -1,0 +1,31 @@
+<div class="d-flex flex-column vh-75 justify-content-center align-items-center text-center">
+  <div class="sidebar-brand">
+    <a class="d-block" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Hello Lynn Logo" class="img-fluid" style="max-height: 200px;">
+    </a>
+  </div>
+
+  <div class="social-links d-flex justify-content-center gap-3 mb-4">
+    <a href="https://www.linkedin.com/in/hellolynn/" target="_blank" class="social-icon" aria-label="LinkedIn">
+      <i class="bi bi-linkedin"></i>
+    </a>
+    <a href="https://github.com/hellolynn" target="_blank" class="social-icon" aria-label="GitHub">
+      <i class="bi bi-github"></i>
+    </a>
+    <a href="mailto:mail@hellolynn.com" class="social-icon" aria-label="Email">
+      <i class="bi bi-envelope"></i>
+    </a>
+  </div>
+
+  <div class="sidebar-footer pb-3">
+    <p class="text-muted small mb-0" 
+       style="line-height: 1.6; font-size: 11px; cursor: help; display: inline-block;"
+       data-bs-toggle="tooltip" 
+       data-bs-placement="top" 
+       title="Running Jekyll + Bootstrap">
+      &copy; {{ "now" | date: "%Y" }}
+      <br>
+      Built with Jekyll + Bootstrap using Github Pages.
+    </p>
+  </div>
+</div>
