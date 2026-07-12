@@ -9,10 +9,10 @@ permalink: /
   <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Hello Lynn Logo" class="img-fluid d-md-none" style="max-height: 300px;">
   <div class="max-width-800 mb-5">
       
-    <h1> 👋 Hi I'm Lynn</h1><br>
-    I design software for the public sector and make complex systems easy to use.<br>
-    It's quiet here but I'll be back with a refresh!<br><br>
-    Reach me at <a href="mailto:mail@hellolynn.com">mail@hellolynn.com.</a><br>
+    <h1> Hey I'm Lynn :) </h1><br>
+    I design software for the public and make systems easy to use.<br>
+    It's a little quiet here but I'll be back with a refresh!<br><br>
+    Reach me at <a href="mailto:mail@hellolynn.com">mail@hellolynn.com.</a><br><br>
     UX • UI
   </div>
 
